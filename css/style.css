@@ -1,0 +1,260 @@
+
+/* <<Body Reset>> */
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif; /*Inhibe el scrolleo y espacio blanco a los lados*/
+}
+
+/* <<Gradiente en la landing page> */
+.landing {
+    text-align: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(90deg, #ffe3db,#342444)
+}
+
+/* <<Encabezado e íconos>> */
+
+h4 {
+    color: white;
+    font-weight: 200;
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+    padding-top: 7rem;
+    text-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    color: white;
+    font-weight: 200;
+    font-size: 3rem;
+    letter-spacing: .2rem;
+    text-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+    padding: 1.8rem 0;
+}
+
+.home {
+    padding-bottom: 7rem;
+}
+
+.fa-stack.fa-2x {
+    font-size: 2.3rem;
+
+}
+
+.fa-stack-2x {
+    opacity: .15
+}
+
+.fa-stack-1x {
+    opacity: .70
+}
+
+.fa-stack-1x:hover {
+    opacity: 1;
+    transform: scale(1.25)
+}
+
+/* <<Navigation>> */
+
+.navbar-brand img {
+    height: 4rem;
+    padding-top: .2rem;
+
+}
+
+.navbar {
+    background-image: linear-gradient(90deg, #ffe3db,#342444);
+    padding: .3rem 0 .6rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.10);
+}
+
+.nav-link {
+    color: white !important;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 0.12rem;
+    font-style: 1.2rem;
+    text-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+    margin-right: 1.2rem;
+}
+
+.nav-link.active, 
+.nav-link:hover {
+    border-bottom: 0.05rem solid #FFF;
+
+}
+
+/* <<Estilo de contenido>> */
+
+.fa-certificate {
+    font-size: 0.5rem;
+    margin-bottom: 0.5rem;
+    color:#857b8e
+}
+
+h3 {
+    font-weight: 300;
+
+}
+
+.w-100 {
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+
+}
+
+/* <<Imagen de fondo fijo>> */
+.fixed-background {
+    padding: 12rem 0;
+    box-shadow: 0 -1rem 1rem rgba(0, 0, 0, 0.10);
+}
+
+.fixed {
+    background-image: url('../img/macbook.jpg');
+    position: fixed;
+}
+/* <<Footer>> */
+
+footer {
+    background-image: linear-gradient(90deg, #ffe3db,#342444);
+    padding: 2.5rem 2rem;
+    box-shadow: 0 -1rem 1rem rgba(0, 0, 0, 0.10);
+}
+
+footer img {
+    height: 4.5rem;
+    margin: 0 auto 1.8rem;
+}
+
+footer a, footer p,
+.socket a, .socket p {
+   color: white; 
+}
+
+ul.social {
+    list-style-type: none;
+    display: flex;
+    max-width: 12rem;
+    padding: 0;
+    margin: 0 auto;
+}
+
+ul.social li {
+    margin: 0 auto;
+
+}
+
+ul.social .svg-inline--fa {
+    font-size: 2.2rem;
+
+}
+
+ul.social .svg-inline--fa:hover {
+    color: #d1d1d1 
+}
+
+
+/* <<Socket>> */
+
+.socket {
+    background-image: linear-gradient(90deg, #ffe3db,#342444);
+    text-align: center;
+    padding: 1rem;
+    border-top: 0.05rem solid white;
+}
+
+/* <<Media queries>> */
+
+
+/* Dispositivos con menos de 1199px (xl) */
+@media (max-width: 1199.98px) {
+
+    h1 {
+        font-size: 2.6rem;
+    }
+    
+    .fa-stack.fa-2x {
+        font-size: 2rem;
+    }
+
+    .fixed-background {
+        padding: 9rem 0;
+
+}
+
+/* Dispositivos con menos de 992px (xl) */
+@media (max-width: 991.98px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .fa-stack.fa-2x {
+        font-size: 1.7rem;
+    }
+
+    .fixed-background {
+        padding: 7rem 0;
+
+}
+    
+}
+
+/* Dispositivos con menos de 768 (md) */
+@media (max-width: 767.98px) {
+    
+}
+
+/*BOOTSTRAP BREAK POINTS 
+Dispositivos extra pequeño (xs) (menores que 576 px) -- No hay media query porque este es el default para Bootstrap
+
+Dispositivos tamaño pequeño (sm) ( >= 576 px)
+@media (min-width: 576px) {}
+
+Dispositivos tamaño mediano (md) ( >= 768 px)
+@media (min-width: 768px) {}
+
+Dispositivos tamaño grande (lg) ( >= 992 px)
+@media (min-width: 992px) {}
+
+Dispositivos tamaño extra grande (xl) ( >= 1200 px)
+@media (min-width: 1200px) {}
+
+*/
+
+/* <<Bootstrap Mobile Gutter Fix>> (ajustes para evitar errores en IOS>> */
+
+.row, .container-fluid {
+    margin-left: 0 px !important;
+    margin-right: 0px !important;
+}
+
+/* <<Imagen de fondo fijo>> */
+.fixed-background {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999 !important;
+}
+
+.fixed {
+    z-index: -999 !important;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+}
